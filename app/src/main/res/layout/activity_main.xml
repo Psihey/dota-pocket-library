@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_relative_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.ukraine.valhallastudio.dotapocketlibrary.MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/iv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/main_activity_background"
+        android:scaleType="centerCrop"
+        android:contentDescription="MyImageView" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/btn_heroes"
+        style="@style/MyButtonMainLayout"
+        android:background="@drawable/main_activity_button_selector"
+        android:text="@string/btn_heroes_main_activity"/>
+
+    <Button
+        android:id="@+id/btn_items"
+        style="@style/MyButtonMainLayout"
+        android:layout_alignParentBottom="true"
+        android:text="@string/btn_items_main_activity"
+        android:background="@drawable/main_activity_button_selector"/>
+
+</RelativeLayout>
+
