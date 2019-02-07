@@ -20,7 +20,7 @@ The application supports Android 4.1 JELLY BEAN (API level 16) and above.
 
 ## Installation
 
-There are different ways to get the Laverna app for Android: through the google play, from github or building it yourself.
+There are different ways to get the dota-pocket-library app for Android: through the google play, from github or building it yourself.
 
 ### Google play
 
